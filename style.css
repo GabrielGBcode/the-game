@@ -1,0 +1,81 @@
+/* Reset Geral */
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+/* Impedir que seja possível interagir com os itens */
+::selection {
+  background: transparent;
+}
+.icons {
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -moz-user-drag: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+/* Estilo Geral */
+body {
+  /* fonte */
+  font-family: "Protest Revolution", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  /* tema escuro */
+  background-color: #ffffff;
+  color: #000000;
+}
+
+div.items {
+  /* centralização */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Botão */
+#play-btn {
+  background-color: #ff4500;
+  color: #ffffff;
+  margin-top: 0.8rem;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+}
+
+/* Ícones */
+.icons {
+  font-size: 2rem;
+  cursor: pointer;
+  text-align: end;
+  margin: 0rem 1rem;
+}
+
+/* Alteração de tema para claro */
+.dark-theme {
+  background-color: #050505;
+  color: #ffffff;
+}
+
+/* Moon */
+#moon-toggle {
+  content: "🌑";
+}
+
+/* BR Flag */
+#language-toggle::before {
+  content: "";
+}
+
+/* EUA Flag */
+#language-toggle.en::before {
+  content: "";
+}
